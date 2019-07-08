@@ -5,7 +5,7 @@ sudo apt-get -y upgrade
 sudo apt-get -y install python3-numpy python3-scipy python3-matplotlib python3-pandas
 sudo apt-get -y install python3-pip python3-pil
 sudo apt-get -y install build-essential python-dev git
-sudo apt-get -y install python-requests python-dataclasses python-typing
+sudo apt-get -y install python-requests python-typing
 sudo apt-get -y install g++ cmake python-dev
 sudo apt-get -y install nodejs npm freetype2-demos
 sudo apt-get -y install zlib1g-dev zip libjpeg8-dev libhdf5-dev libpng-devel libfreetype-devel
