@@ -45,6 +45,10 @@ rm -rf torchvision
 
 pip3 install spacy==2.0.18
 
+pip3 install nvidia-ml-py3
+pip3 install packaging
+pip3 install typing
+
 pip3 install fastai --no-deps
 
 mkdir .fastai
