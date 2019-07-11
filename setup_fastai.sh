@@ -32,16 +32,20 @@ pip3 install fastprogress
 wget https://nvidia.box.com/shared/static/j2dn48btaxosqp0zremqqm8pjelriyvs.whl -O torch-1.1.0-cp36-cp36m-linux_aarch64.whl
 pip3 install numpy torch-1.1.0-cp36-cp36m-linux_aarch64.whl
 
-#pip3 install torchvision --no-deps
+# pip3 install torchvision --no-deps
 
 # Build & Install Torchvision
 # see https://devtalk.nvidia.com/default/topic/1049071/jetson-nano/pytorch-for-jetson-nano/
 sudo apt-get install libjpeg-dev zlib1g-dev
-git clone -b v0.3.0 https://github.com/pytorch/vision torchvision
-cd torchvision
-sudo python3 setup.py install
-cd ..
-rm -rf torchvision
+
+#git clone -b v0.3.0 https://github.com/pytorch/vision torchvision
+#cd torchvision
+#sudo python3 setup.py install
+#cd ..
+#rm -rf torchvision
+wget https://github.com/adumont/jetson-nano/raw/master/dist/torchvision-0.3.0-cp36-cp36m-linux_aarch64.whl -O torchvision.whl
+pip3 install torchvision.whl
+rm torchvision.whl
 
 pip3 install spacy==2.0.18
 
