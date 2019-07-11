@@ -10,4 +10,4 @@ sudo pip3 install -U numpy grpcio absl-py py-cpuinfo psutil portpicker six mock 
 
 sudo pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v42 tensorflow-gpu --no-deps
 
-
+sudo pip3 install -U keras
