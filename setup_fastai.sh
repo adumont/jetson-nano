@@ -43,9 +43,7 @@ sudo apt-get install libjpeg-dev zlib1g-dev
 #sudo python3 setup.py install
 #cd ..
 #rm -rf torchvision
-wget https://github.com/adumont/jetson-nano/raw/master/dist/torchvision-0.3.0-cp36-cp36m-linux_aarch64.whl -O torchvision.whl
-pip3 install torchvision.whl
-rm torchvision.whl
+pip3 install dist/torchvision-0.3.0-cp36-cp36m-linux_aarch64.whl
 
 pip3 install spacy==2.0.18
 
