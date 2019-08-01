@@ -29,8 +29,8 @@ pip3 install fastprogress
 
 # Updated PyTorch, see https://devtalk.nvidia.com/default/topic/1049071/jetson-nano/pytorch-for-jetson-nano/
 
-#wget https://nvidia.box.com/shared/static/j2dn48btaxosqp0zremqqm8pjelriyvs.whl -O torch-1.1.0-cp36-cp36m-linux_aarch64.whl
-pip3 install numpy dist/torch-1.1.0-cp36-cp36m-linux_aarch64.whl
+wget https://nvidia.box.com/shared/static/j2dn48btaxosqp0zremqqm8pjelriyvs.whl -O /tmp/torch-1.1.0-cp36-cp36m-linux_aarch64.whl
+pip3 install numpy /tmp/torch-1.1.0-cp36-cp36m-linux_aarch64.whl && rm /tmp/torch-1.1.0-cp36-cp36m-linux_aarch64.whl
 
 # pip3 install torchvision --no-deps
 
