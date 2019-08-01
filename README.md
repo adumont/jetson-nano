@@ -8,8 +8,6 @@ This is an Git LFS repository. You need to run this to clone it properly on the 
 wget https://raw.githubusercontent.com/adumont/jetson-nano/master/clone.sh -O - | bash
 ```
 
-You can do it all with this command:
-
 ### Frameworks
 
 - [Fast.AI](https://forums.fast.ai/t/share-your-work-here/27676/1274)
