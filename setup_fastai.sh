@@ -11,7 +11,7 @@ sudo apt-get -y install nodejs npm freetype2-demos
 sudo apt-get -y install zlib1g-dev zip libjpeg8-dev libhdf5-dev libpng-dev libfreetype6-dev
 sudo apt-get -y install libhdf5-serial-dev hdf5-tools
 sudo apt-get -y install cython python-cuda
-sudo apt-get -y install pkg-config libfreetype6-dev libpng12-dev
+sudo apt-get -y install pkg-config libfreetype6-dev #libpng12-dev
 #sudo apt-get -y install htop
 
 pip3 install freetype-py
