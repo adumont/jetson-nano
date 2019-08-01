@@ -2,12 +2,10 @@
 
 ### README: How to clone this repository
 
-This is an Git LFS repository. You need to run this to clone it properly on the Nano (otherwise all the prebuilt wheels won't be cloned)
+This is an Git LFS repository. You need to run this to clone it properly on the Nano (otherwise all the prebuilt wheels won't be cloned). This will install git-lfs, and only after that clone the repo.
 
 ```
-git clone https://github.com/adumont/jetson-nano.git
-cd jetson-nano
-./setup_gitlfs.sh
+wget https://raw.githubusercontent.com/adumont/jetson-nano/master/clone.sh -O - | bash
 ```
 
 You can do it all with this command:
