@@ -1,6 +1,7 @@
 #!/bin/bash
-sudo apt-get -y update
-sudo apt-get -y upgrade
+sudo apt-get -yy update
+sudo apt-get -yy dist-upgrade
+sudo apt-get -yy autoremove
 
 sudo apt-get -y install python3-numpy python3-scipy python3-matplotlib python3-pandas
 sudo apt-get -y install python3-pip python3-pil
@@ -29,8 +30,8 @@ pip3 install fastprogress
 
 # Updated PyTorch, see https://devtalk.nvidia.com/default/topic/1049071/jetson-nano/pytorch-for-jetson-nano/
 
-wget https://nvidia.box.com/shared/static/j2dn48btaxosqp0zremqqm8pjelriyvs.whl -O torch-1.1.0-cp36-cp36m-linux_aarch64.whl
-pip3 install numpy torch-1.1.0-cp36-cp36m-linux_aarch64.whl
+#wget https://nvidia.box.com/shared/static/j2dn48btaxosqp0zremqqm8pjelriyvs.whl -O torch-1.1.0-cp36-cp36m-linux_aarch64.whl
+pip3 install numpy dist/torch-1.1.0-cp36-cp36m-linux_aarch64.whl
 
 # pip3 install torchvision --no-deps
 
