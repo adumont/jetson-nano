@@ -1,6 +1,6 @@
 # jetson-nano
 
-### How to clone repository
+### README: How to clone this repository
 
 This is an Git LFS repository. You need to run this to clone it properly on the Nano (otherwise all the prebuilt wheels won't be cloned)
 
