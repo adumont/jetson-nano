@@ -1,7 +1,6 @@
 #!/bin/bash
 sudo apt-get -yy update
 sudo apt-get -yy dist-upgrade
-sudo apt-get -yy autoremove
 
 sudo apt-get -y install python3-numpy python3-scipy python3-matplotlib python3-pandas
 sudo apt-get -y install python3-pip python3-pil
@@ -53,6 +52,8 @@ pip3 install packaging
 pip3 install typing
 
 pip3 install fastai --no-deps
+
+sudo apt-get -yy autoremove
 
 mkdir .fastai
 mkdir .fastai/data
