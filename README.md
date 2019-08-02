@@ -8,10 +8,11 @@
 - [OpenCV & dlib](https://medium.com/@ageitgey/build-a-hardware-based-face-recognition-system-for-150-with-the-nvidia-jetson-nano-and-python-a25cb8c891fd)
 - [Scripts for building OpenCV on the NVIDIA Jetson Nano](https://github.com/JetsonHacksNano/buildOpenCV)
 
-### CSI Cam
+### Camera
 
 - [Jetson Nano + Raspberry Pi Camera](https://www.jetsonhacks.com/2019/04/02/jetson-nano-raspberry-pi-camera/)
-
+- [NVIDIA-AI-IOT/jetcam](https://github.com/NVIDIA-AI-IOT/jetcam)
+  - See [Configure Nvidia Jetson Nano as an AI testbed](https://thenewstack.io/tutorial-configure-nvidia-jetson-nano-as-an-ai-testbed/)
 
 ### Things I've got to check
 
