@@ -32,8 +32,9 @@ pip3 install fastprogress
 #pip3 install --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v42 tensorflow-gpu==$TF_VERSION+nv$NV_VERSION
 
 # Updated PyTorch, see https://devtalk.nvidia.com/default/topic/1049071/jetson-nano/pytorch-for-jetson-nano/
+# wget https://nvidia.box.com/shared/static/j2dn48btaxosqp0zremqqm8pjelriyvs.whl -O /tmp/torch-1.1.0-cp36-cp36m-linux_aarch64.whl
 
-wget https://nvidia.box.com/shared/static/j2dn48btaxosqp0zremqqm8pjelriyvs.whl -O /tmp/torch-1.1.0-cp36-cp36m-linux_aarch64.whl
+cat dist/torch-1.1.0-cp36-cp36m-linux_aarch64.whl* > /tmp/torch-1.1.0-cp36-cp36m-linux_aarch64.whl
 pip3 install /tmp/torch-1.1.0-cp36-cp36m-linux_aarch64.whl && rm /tmp/torch-1.1.0-cp36-cp36m-linux_aarch64.whl
 
 # pip3 install torchvision --no-deps
