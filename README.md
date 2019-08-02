@@ -1,13 +1,5 @@
 # jetson-nano
 
-### README: How to clone this repository
-
-This is an [Git LFS](https://github.com/git-lfs/git-lfs/wiki) repository. You need to run this to clone it properly on the Nano (otherwise all the prebuilt wheels won't be cloned). This will install git-lfs, and only after that clone the repo.
-
-```
-wget https://raw.githubusercontent.com/adumont/jetson-nano/master/clone.sh -O - | bash
-```
-
 ### Frameworks
 
 - [Fast.AI](https://forums.fast.ai/t/share-your-work-here/27676/1274)
