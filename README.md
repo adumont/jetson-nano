@@ -36,6 +36,10 @@ sudo sh -c 'echo 255 > /sys/devices/pwm-fan/target_pwm'
 - Max perf: sudo /usr/bin/jetson_clocks
 - Power Mode (Mode 0 is 10W MAXN, Mode 1 is 5W): sudo nvpmodel -m 0
 
+### Case
+
+- [NanoBox Connectors' Edition](https://cults3d.com/en/3d-model/tool/jetson-nano-case-connectors-edition)
+
 ### Things I've got to check
 
 - [Docker containers, Computer Vision and Cuda](https://twitter.com/pjdecarlo/status/1149850403149762560) 
