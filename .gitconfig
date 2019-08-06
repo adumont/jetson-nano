@@ -1,0 +1,38 @@
+[color]
+        ui = auto
+[user]
+	name = Alexandre Dumont
+	email = adumont@gmail.com
+[alias]
+  st = status
+  ci = commit
+  br = branch
+  ba = branch -a
+  co = checkout
+  df = diff
+  cl = config -l --local
+  lg = log -p
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  ls = ls-files
+  fdiff = diff-tree --name-status -r
+[color "diff"]
+    whitespace = red reverse
+[core]
+#    whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+
+[branch]
+        autosetuprebase = always
+# for git version >=1.8 only
+#[push]
+#        default = simple
+[merge]
+        tool = vimdiff
+[mergetool]
+        keepBackup = false
+[push]
+	default = simple
+[core]
+	autocrlf = input
+[credential]
+	helper = cache --timeout=604800
