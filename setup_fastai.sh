@@ -18,10 +18,11 @@ sudo apt-get install -yy libjpeg-dev zlib1g-dev
 pip3 install freetype-py
 pip3 install pypng
 
-pip3 install dist/{numpy,Bottleneck,dataclasses}*
+pip3 install dist/{numpy,Bottleneck}*
 pip3 install dataclasses
 
-pip3 install dist/{pynvx,fire,termcolor,tornado,prometheus-client}*
+pip3 install dist/{pynvx,fire,termcolor,tornado}*
+pip3 install prometheus-client
 pip3 install dist/{pyzmq,pandocfilters,backcall,MarkupSafe,pyrsistent}*
 
 pip3 install jupyter jupyterlab
@@ -34,9 +35,6 @@ pip3 install fastprogress
 # Updated PyTorch, see https://devtalk.nvidia.com/default/topic/1049071/jetson-nano/pytorch-for-jetson-nano/
 # wget https://nvidia.box.com/shared/static/j2dn48btaxosqp0zremqqm8pjelriyvs.whl -O /tmp/torch-1.1.0-cp36-cp36m-linux_aarch64.whl
 
-cat dist/torch-1.1.0-cp36-cp36m-linux_aarch64.whl* > /tmp/torch-1.1.0-cp36-cp36m-linux_aarch64.whl
-pip3 install /tmp/torch-1.1.0-cp36-cp36m-linux_aarch64.whl && rm /tmp/torch-1.1.0-cp36-cp36m-linux_aarch64.whl
-
 # pip3 install torchvision --no-deps
 
 # Build & Install Torchvision
@@ -48,17 +46,18 @@ pip3 install /tmp/torch-1.1.0-cp36-cp36m-linux_aarch64.whl && rm /tmp/torch-1.1.
 #cd ..
 #rm -rf torchvision
 
-pip3 install dist/{six,Pillow}*
+pip3 install dist/Pillow*
 pip3 install dist/torchvision-0.3.0-cp36-cp36m-linux_aarch64.whl --no-deps
 
-pip3 install dist/{murmurhash,cymem,preshed,msgpack,toolz,cytoolz}*
-pip3 install dist/{wrapt,dill,thinc,ujson,regex,spacy,nvidia_ml_py3}*
+cat dist/torch-1.1.0-cp36-cp36m-linux_aarch64.whl* > /tmp/torch-1.1.0-cp36-cp36m-linux_aarch64.whl
 
-pip3 install packaging
-pip3 install typing
-
+pip3 install dist/{murmurhash,cymem,preshed,msgpack,toolz,cytoolz,wrapt,dill,thinc,ujson,regex,spacy,numpy,Pillow,Bottleneck,nvidia_ml_py3}*\
+   /tmp/torch-1.1.0-cp36-cp36m-linux_aarch64.whl \
+   dist/torchvision-0.3.0-cp36-cp36m-linux_aarch64.whl \
+   packaging typing 
 pip3 install fastai --no-deps
 
+rm /tmp/torch-1.1.0-cp36-cp36m-linux_aarch64.whl
 sudo apt-get -yy autoremove
 
 mkdir .fastai
