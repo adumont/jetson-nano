@@ -1,4 +1,14 @@
-#!/bin/bash -x
+#!/bin/bash
+
+# https://github.com/jkjung-avt/jetson_nano/blob/master/install_basics.sh
+if ! grep 'cuda/bin' ${HOME}/.bashrc > /dev/null ; then
+  echo "** Add CUDA stuffs into ~/.bashrc"
+  echo >> ${HOME}/.bashrc
+  echo "export PATH=/usr/local/cuda/bin:\${PATH}" >> ${HOME}/.bashrc
+  echo "export LD_LIBRARY_PATH=/usr/local/cuda/lib64:\${LD_LIBRARY_PATH}" >> ${HOME}/.bashrc
+fi
+
+set -x
 
 sudo apt-get -yy update
 sudo apt-get -yy dist-upgrade
