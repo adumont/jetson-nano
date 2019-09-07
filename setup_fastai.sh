@@ -21,12 +21,8 @@ pip3 install pypng
 pip3 install dist/{numpy,Bottleneck}*
 pip3 install dataclasses
 
-pip3 install dist/{pynvx,fire,termcolor,tornado}*
-pip3 install prometheus-client
-pip3 install dist/{pyzmq,pandocfilters,backcall,MarkupSafe,pyrsistent}*
-
-pip3 install jupyter jupyterlab
-pip3 install fastprogress
+pip3 install dist/{pynvx,fire,termcolor,tornado}* prometheus-client
+pip3 install dist/{pyzmq,pandocfilters,backcall,MarkupSafe,pyrsistent,nbresuse}* jupyter jupyterlab fastprogress
 
 # TensorFlow
 #pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v42 tensorflow-gpu
