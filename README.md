@@ -1,4 +1,8 @@
-# jetson-nano
+# Jetson Nano ![NVidiaLogo](https://developer.nvidia.com/sites/all/themes/devzone_base/images/nvidia.png) 
+
+### Tutorials 
+
+- Two days to a demo https://developer.nvidia.com/embedded/twodaystoademo
 
 ### Frameworks
 
