@@ -47,3 +47,7 @@ sudo sh -c 'echo 255 > /sys/devices/pwm-fan/target_pwm'
 ### Things I've got to check
 
 - [Docker containers, Computer Vision and Cuda](https://twitter.com/pjdecarlo/status/1149850403149762560) 
+
+### Reference
+
+- Nvidia Doc [Jetson Modules and Developer Kits](https://docs.nvidia.com/jetson/l4t/index.html#page/Tegra%2520Linux%2520Driver%2520Package%2520Development%2520Guide%2Fhw_setup.html%23wwpID0E0FN0HA)
