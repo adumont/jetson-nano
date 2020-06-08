@@ -34,9 +34,10 @@ $ ./jetsonInfo.py
 - This guy also have his custom scripts to build [opencv, ssd caffe, tensorflow](https://github.com/jkjung-avt/jetson_nano) & https://jkjung-avt.github.io/opencv-on-nano/
 
 - Tensorflow
-  - [Release Notes For Jetson Platform :: NVIDIA Deep Learning Frameworks Documentation](https://docs.nvidia.com/deeplearning/frameworks/install-tf-jetson-platform-release-notes/tf-jetson-rel.html#tf-jetson-rel): See TensorFlow compatibility with NVIDIA containers and Jetpack
+  - [Installing TensorFlow For Jetson Platform](https://docs.nvidia.com/deeplearning/frameworks/install-tf-jetson-platform/index.html) (also as [PDF](https://docs.nvidia.com/deeplearning/frameworks/pdf/Install-TensorFlow-Jetson-Platform.pdf))
+  - [Release Notes For Jetson Platform](https://docs.nvidia.com/deeplearning/frameworks/install-tf-jetson-platform-release-notes/tf-jetson-rel.html#tf-jetson-rel): See TensorFlow compatibility with NVIDIA containers and Jetpack
   - [Prebuilt Tensorflow python wheels per Jetpack version](https://developer.download.nvidia.com/compute/redist/jp/)
-  - https://docs.nvidia.com/deeplearning/frameworks/pdf/Install-TensorFlow-Jetson-Platform.pdf
+
 
 ### Camera
 
