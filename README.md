@@ -4,6 +4,25 @@
 
 - Two days to a demo https://developer.nvidia.com/embedded/twodaystoademo
 
+### Utils
+
+Get info about your board:
+
+```
+$ cat /proc/device-tree/model
+NVIDIA Jetson Nano Developer Kit
+```
+Get information about the NVIDIA Jetson OS environment, L4T, JetPack version, using [jetsonhacks/jetsonUtilities](https://github.com/jetsonhacks/jetsonUtilities):
+
+```
+$ ./jetsonInfo.py 
+ NVIDIA Jetson TX1
+ L4T 32.2.0 [ JetPack 4.2.1 ]
+ Ubuntu 18.04.4 LTS
+ Kernel Version: 4.9.140-tegra
+ CUDA 10.0.326
+```
+
 ### Frameworks
 
 - [Fast.AI](https://forums.fast.ai/t/share-your-work-here/27676/1274)
@@ -13,6 +32,11 @@
 - [Instructions to install TensorFlow on Jetson Nano](https://docs.nvidia.com/deeplearning/frameworks/install-tf-jetson-platform/index.html)
 - [OpenCV & dlib](https://medium.com/@ageitgey/build-a-hardware-based-face-recognition-system-for-150-with-the-nvidia-jetson-nano-and-python-a25cb8c891fd)
 - This guy also have his custom scripts to build [opencv, ssd caffe, tensorflow](https://github.com/jkjung-avt/jetson_nano) & https://jkjung-avt.github.io/opencv-on-nano/
+
+- Tensorflow
+  - [Release Notes For Jetson Platform :: NVIDIA Deep Learning Frameworks Documentation](https://docs.nvidia.com/deeplearning/frameworks/install-tf-jetson-platform-release-notes/tf-jetson-rel.html#tf-jetson-rel): See TensorFlow compatibility with NVIDIA containers and Jetpack
+  - [Prebuilt Tensorflow python wheels per Jetpack version](https://developer.download.nvidia.com/compute/redist/jp/)
+  - https://docs.nvidia.com/deeplearning/frameworks/pdf/Install-TensorFlow-Jetson-Platform.pdf
 
 ### Camera
 
